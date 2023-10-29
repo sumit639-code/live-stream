@@ -6,7 +6,9 @@ import { useParams } from "next/navigation";
 const mainroom = () => {
   const roomid = useParams();
   const idR = roomid.room.toString();
-    console.log(idR)
+  console.log(idR);
+  
+  
   const myMeeting = async (ele) => {
     const appID = 2086565431;
     const serverSecret = "ac43861c47358171a8f860a0a7d8a41e";
