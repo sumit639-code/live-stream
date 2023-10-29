@@ -4,7 +4,7 @@ import "@/Style/Code.css";
 import { useRouter } from "next/navigation";
 
 const home = () => {
-  const [code, setcode] = useState();
+  const [code, setcode] = useState("");
   const router = useRouter();
   const handleroom = (ev)=>{
     ev.preventDefault();
