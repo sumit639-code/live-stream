@@ -1,0 +1,39 @@
+.mainpageui{
+    z-index: 1;
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: white;
+    padding: 20px 30px;
+    text-decoration: none;
+    text-transform: capitalize;
+    border-radius: 30px;
+    transition: 400ms cubic-bezier(0.215, 0.610, 0.355, 1);
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.374);
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+.mainpageui:hover{
+    transform: translateY(-5px);
+    padding: 18px 50px;
+    box-shadow: 6px 8px 30px rgba(0, 0, 0, 0.63);
+}
+@keyframes move {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+html,body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

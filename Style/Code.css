@@ -1,37 +1,55 @@
-html,body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+html,
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(29, 50, 66);
 }
-.form{
-    background-color: rgba(9, 152, 255, 0.667);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 6px 15px 25px rgba(0, 0, 0, 0.258);
+.form {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 6px 15px 25px rgba(0, 0, 0, 0.258);
 }
-.title{
-    text-transform: capitalize;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 20px 0px;
+.title {
+  text-transform: capitalize;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px 0px;
 }
-.input{ 
-    padding: 10px;
-    border-radius: 20px;
-    border: 0px solid black;
+.input {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bolder;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 0px solid black;
+  transition: 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-.input:active{
-    border: 0px solid black;
+.input:hover {
+  border-radius: 20px;
 }
-.submit{
-    margin-top: 20px ;
-    padding: 10px 30px;
-    border-radius: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.26);
-    cursor: pointer;
+.input:focus,
+.input:active {
+  border: 0px solid black;
+  outline-width: 0px;
+}
+.submit {
+  margin-top: 20px;
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.26);
+  cursor: pointer;
+}
+.generate {
+  margin-top: 20px;
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.26);
+  cursor: pointer;
+  background-color: rgb(31, 67, 67);
 }

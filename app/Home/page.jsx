@@ -10,6 +10,9 @@ const home = () => {
     ev.preventDefault();
     router.push(`/room/${code}`)
   }
+  const gen = ()=>{
+    setcode(Math.random().toString(16).substr(2, 8))
+  }
   return (
     <>
       <form onSubmit={handleroom} className="form">
@@ -24,6 +27,7 @@ const home = () => {
           placeholder="enter the code"
           className="input"
         />
+        <span type="button" className="generate" onClick={gen}>Generate</span>
         <button className="submit">Submit</button>
       </form>
     </>
